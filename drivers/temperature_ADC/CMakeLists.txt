@@ -1,0 +1,3 @@
+add_library(temperature_ADC temperature_ADC.c include/temperature_ADC.h)
+target_include_directories(temperature_ADC PUBLIC include/)
+target_link_libraries(temperature_ADC PUBLIC pico_stdlib hardware_adc)
