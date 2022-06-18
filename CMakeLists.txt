@@ -8,7 +8,7 @@ pico_sdk_init()
 add_subdirectory(drivers)
 
 add_executable(main main.c)
-target_link_libraries(main PRIVATE temperature_ADC)
+target_link_libraries(main PRIVATE temperature_ADC LCD_I2C)
 
 
 pico_enable_stdio_usb(main 1)
